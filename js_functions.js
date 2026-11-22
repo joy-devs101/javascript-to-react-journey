@@ -28,8 +28,23 @@
 
 // console.log(multiply(5, 6));
 
-function greet(name = "USER") {
-    return `Hello ${name}`;
+// function greet(name = "USER") {
+//     return `Hello ${name}`;
+// }
+
+// console.log(greet("moos"));
+
+const name = "Global";
+
+function outer() {
+    const name = "Outer";
+
+    function inner() {
+        console.log(name);
+    }
+
+    return inner;
 }
 
-console.log(greet("mofos"));
+const fn = outer()
+fn();
