@@ -34,17 +34,36 @@
 
 // console.log(greet("moos"));
 
-const name = "Global";
+// const name = "Global";
 
-function outer() {
-    const name = "Outer";
+// function outer() {
+//     const name = "Outer";
 
-    function inner() {
-        console.log(name);
-    }
+//     function inner() {
+//         console.log(name);
+//     }
 
-    return inner;
-}
+//     return inner;
+// }
 
-const fn = outer()
-fn();
+// const fn = outer()
+// fn();
+
+// function createCounter() {
+
+//     let count = 0;
+
+//     function increment() {
+//         count++;
+//         console.log(`Count increased to ${count}`);
+//     }
+
+//     return { increment }
+// }
+
+// const counter = createCounter();
+
+// counter.increment();
+// counter.increment();
+// counter.increment();
+
